@@ -1,0 +1,35 @@
+body {
+  background-color: #EBF0F3;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #C4C4C4;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/logo_pic.png') no-repeat;
+  width: 86px;
+  height: 79px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* JobFinder title */
+  font-family: 'Roboto', sans-serif;
+  color: #171C20;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 4px 0px 4px #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
