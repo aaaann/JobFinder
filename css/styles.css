@@ -34,5 +34,36 @@ body {
   text-decoration: none;
 }
 
+.navbar-toggler:focus {
+  border: 1px solid #FF9109;
+}
+
+button.navbar-toggler {
+  clear: both;
+  /*margin-top: -15px;*/
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .navbar-brand span {
+    /*padding-top: 5px;*/
+    font-size: 5vw;
+    text-shadow: 0.5px 0.5px 0.5px #000000;
+    line-height: 0.5px;
+  }
+
+  .navbar-brand {
+    padding-top: 0px;
+    /*height: 30px;*/
+  }
+}
+#nav-list {
+  margin-right: 25px;
+}
+
+#nav-list a{
+text-align: right;
+}
+
 
 
