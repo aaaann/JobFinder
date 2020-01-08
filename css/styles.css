@@ -57,6 +57,7 @@ button.navbar-toggler {
     /*height: 30px;*/
   }
 }
+
 #nav-list {
   margin-right: 25px;
 }
@@ -81,6 +82,16 @@ button.navbar-toggler {
   .border-md-right {
     border-right: none;
   }
+}
+
+.main-section-with-image {
+  background-image: url(/images/main_bckgr_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .jumbotron {
+  background: transparent;
 }
 
 
