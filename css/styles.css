@@ -94,6 +94,49 @@ button.navbar-toggler {
   background: transparent;
 }
 
+.carousel-page-container {
+  height: 400px;
+  margin: 0 auto;
+}
 
+.carousel-page-container h3 {
+  text-align: center;
+}
+
+.carousel-page-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.carousel-page-content span {
+  text-align: left;
+  margin-right: 100px;
+  vertical-align: middle;
+  align-self: center;
+}
+
+
+.carousel-page-content img {
+  border-radius: 5px;
+
+}
+
+
+@media (max-width: 767px) {
+  .carousel-page-container {
+    height: 240px;
+    margin: 0 auto;
+  }
+  .carousel-page-content span{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
+}
 
 
