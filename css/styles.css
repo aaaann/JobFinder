@@ -135,8 +135,77 @@ button.navbar-toggler {
     text-align: center;
     margin: 0 auto;
   }
+}
+#secondary-content {
+  margin-bottom: 10px;
+}
 
+#home-tiles {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-around;
+}
 
+#articles-tile, #vacancies-tile {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border-top: 1px solid #3F0C1F;
+  box-shadow: 0px 7px 10px -8px #000000 inset;
+}
+
+#articles-tile > a, #vacancies-tile > a {
+  text-transform: uppercase;
+}
+
+/*#articles-tile:hover, #vacancies-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}*/
+
+#articles-tile-content, #vacancies-tile-content {
+  overflow-y: auto;
+  background-color: rgba(196, 196, 196, 0.5);
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+#articles-tile-content ul, #vacancies-tile-content ul {
+  padding-right: 40px;
+}
+
+#articles-tile-content ul li, #vacancies-tile-content ul li {
+  margin-bottom: 7px;
+}
+
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: rgba(83, 86, 89, 1);
+  border-top: 0;
+}
+
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+
+#creation-info, #site-info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: rgba(229, 229, 229, 1);
+  font-weight: middle;
+}
+
+#site-info {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  #creation-info {
+    text-align: center;
+  }
 }
 
 
