@@ -156,7 +156,11 @@ button.navbar-toggler {
 }
 
 #articles-tile > a, #vacancies-tile > a {
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
 }
 
 /*#articles-tile:hover, #vacancies-tile:hover {
@@ -205,6 +209,23 @@ button.navbar-toggler {
 @media (max-width: 767px) {
   #creation-info {
     text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  #articles-tile, #vacancies-tile {
+    height: 200px;
+  }
+
+  #articles-tile a, #articles-tile li, #vacancies-tile a, #vacancies-tile li {
+    font-size: .85em;
+  }
+
+}
+
+@media (max-width: 575px) {
+  #vacancies-tile {
+    margin-top: 40px;
   }
 }
 
