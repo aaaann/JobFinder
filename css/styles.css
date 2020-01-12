@@ -266,51 +266,42 @@ button.navbar-toggler {
   z-index: 3;
 }
 
-/*@media (max-width: 767px) {
-  .profile-info {
-    flex-direction: column;
-  }
-}
-
 .profile-info-column {
   width: 50%;
-}*/
+}
 
-/*@media screen and (max-width: 767px) {
-.profile-info-column {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}*/
 
-/*.profile-info-column-left {
+.profile-info-column-left {
   display: flex;
   flex-direction: row;
 }
 
-@media screen and (max-width: 767px) {
-.profile-info-column-left {
+@media (max-width: 767px) {
+
+  
+
+  .profile-info {
+    flex-direction: column;
+    
+  }
+
+  .profile-info-column {
+    width: 100%;
+  }
+  
+  .profile-info-column-left {
+    flex-direction: column;
     margin-bottom: 1.875rem;
+
+  }
+
+
+  
 }
 
-.info-details-left {
-  display: flex;
-  margin-right: 1000px;
-}*/
-
-/*.info-details-right {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: flex-start;
-}*/
 
 
-/*@media screen and (min-width: 768px) {
-.info-details-left {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 2.125rem;
-}*/
+
 
 .info-details-photo-wrapper {
     position: relative;
