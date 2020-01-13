@@ -278,11 +278,12 @@ button.navbar-toggler {
 
 @media (max-width: 767px) {
 
-  
+  .profile-body {
+    font-size: 12px;
+  }
 
   .profile-info {
     flex-direction: column;
-    
   }
 
   .profile-info-column {
@@ -294,9 +295,14 @@ button.navbar-toggler {
     margin-bottom: 1.875rem;
 
   }
-
-
   
+}
+
+@media (max-width: 991px) {
+    .profile-body {
+      font-size: 14px;
+    }
+
 }
 
 
@@ -322,18 +328,18 @@ button.navbar-toggler {
 }
 
 .info-details-text-big {
-  font-size: 1.875rem;
+  font-size: 1.875em;
   font-weight: 600;
   font-style: normal;
   line-height: normal;
-  letter-spacing: .025rem;
+  letter-spacing: .025em;
   color: #383f4a;
   word-break: break-word;
   word-wrap: break-word;
 }
 
 .info-details-name {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 400;
   font-style: normal;
   color: #383f4a;
@@ -350,7 +356,7 @@ button.navbar-toggler {
 }
 
 .info-details-text {
-  font-size: 1.125rem;
+  font-size: 1.125em;
     font-weight: 400;
     font-style: normal;
     color: #383f4a;
@@ -367,7 +373,7 @@ button.navbar-toggler {
 }
 
 .info-details-link {
-    font-size: 1.125rem;
+    font-size: 1.125em;
     font-weight: 400;
     font-style: normal;
     color: #383f4a;
@@ -387,17 +393,19 @@ button.navbar-toggler {
 }
 
 @media screen and (min-width: 1025px) {
-.root.only-profile .profile-body__aside {
-    top: 4.125rem;
+  .root.only-profile .profile-body__aside {
+      top: 4.125rem;
+  }
 }
 
 @media screen and (min-width: 1025px) {
-.profile-body__aside {
-    top: 5.5625rem;
-    bottom: 1.25rem;
-    max-width: 330px;
-    width: 22.91666%;
-    border-radius: .3125rem;
+  .profile-body__aside {
+      top: 5.5625rem;
+      bottom: 1.25rem;
+      max-width: 330px;
+      width: 22.91666%;
+      border-radius: .3125rem;
+  }
 }
 
 .profile-body-aside-inner {
@@ -413,7 +421,7 @@ button.navbar-toggler {
   box-shadow: 0 5px 20px 0 rgba(165,173,182,.2);
 }
 
-.navigation ul, .section ul {
+/*.navigation ul, .section ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -421,10 +429,11 @@ button.navbar-toggler {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-}
+}*/
 
 .navigation-link {
     display: flex;
+    align-items: center;
     padding: .75rem;
     font-size: 1.125rem;
     font-weight: 400;
@@ -439,8 +448,16 @@ button.navbar-toggler {
 
 .navigation-link-icon {
     margin-right: 10px;
-    font-size: 1.375rem;
+    font-size: 1.375em;
     color: currentColor;
+}
+
+#scientificactivity-nav .navigation-link-icon {
+  margin-right: 13px;
+}
+
+#scientificactivity-nav.navigation-link {
+  padding-left: 0.9rem;
 }
 
 .MuiSvgIcon-root {
@@ -448,7 +465,7 @@ button.navbar-toggler {
     width: 1em;
     height: 1em;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     flex-shrink: 0;
     user-select: none;
@@ -463,8 +480,8 @@ svg:not(:root) {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.25em;
+    height: 1.25em;
     background-color: currentColor;
     border-radius: 50%;
 }
@@ -473,8 +490,8 @@ svg:not(:root) {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: .875rem;
-    height: .875rem;
+    width: .875em;
+    height: .875em;
     color: #fff;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
@@ -537,13 +554,44 @@ svg:not(:root) {
 }
 
 .heading-text {
-    font-size: 1.75rem;
+    font-size: 1.75em;
     font-weight: 500;
     font-style: normal;
     line-height: normal;
-    letter-spacing: .025rem;
+    letter-spacing: .025em;
     color: #383f4a;
     letter-spacing: normal;
+}
+
+.section-title {
+    margin-bottom: 1.125em;
+    font-size: 1.125em;
+    font-weight: 500;
+    font-style: normal;
+    color: #4a4a4a;
+}
+
+.timeline-title {
+    font-size: 1.25em;
+    font-weight: 500;
+    font-style: normal;
+    color: #4a4a4a;
+    margin-bottom: .375rem;
+}
+
+.timeline-date {
+    font-size: 1.125em;
+    font-style: normal;
+    color: #a5adb6;
+    margin-bottom: .375rem;
+}
+
+.timeline-description {
+    font-size: 1.125em;
+    font-weight: 400;
+    font-style: normal;
+    color: #a5adb6;
+
 }
 
 .profile-block-content {
@@ -562,6 +610,9 @@ svg:not(:root) {
     -webkit-tap-highlight-color: rgba(255,255,255,0);
 }
 
+.timeline__highlight+.timeline__line {
+    color: #f6ae07;
+}
 
 .timeline__line {
     position: relative;
@@ -570,6 +621,34 @@ svg:not(:root) {
     width: 1.25rem;
     color: #5199ff;
 }
+
+/*.timeline__line:after,*/ .timeline__line:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: "";
+    background-color: currentColor;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.timeline__line:before {
+    width:  1.625em;
+    height: 1.625em;
+    border: .3125rem solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px 0 rgba(165,173,182,.4);
+    z-index: 1;
+}
+
+.timeline__item:last-child .timeline__line:after {
+    display: none;
+}
+
+/*.timeline__line:after {
+    width: 2px;
+    height: calc(100% + 2rem);
+}*/
 
 .timeline__content {
     flex-grow: 1;
@@ -580,6 +659,87 @@ svg:not(:root) {
     padding: 0;
     list-style: none;
 }
+
+
+.languages {
+    display: flex;
+    flex: wrap;
+    margin: 0 -1rem;
+    -webkit-transition: max-height 1s ease;
+    transition: max-height 1s ease;
+}
+
+.language-item-name {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 500;
+    font-style: normal;
+    color: #383f4a;
+}
+
+.MuiSvgIcon-colorPrimary {
+    color: #5199ff;
+}
+
+.language-item__arrow {
+    margin-right: .3125rem;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+/*.language-item-body {
+    padding-left: 1.875rem;
+}*/
+
+.language-item-level {
+    font-weight: 400;
+    font-style: normal;
+    color: #a5adb6;
+    font-size: 1.125em;
+    padding-left: 2rem;
+}
+
+.about-me-container {
+    padding-left: 3.75rem;
+}
+
+.tags-cloud, .tags-cloud-item {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tags-cloud {
+    flex-wrap: wrap;
+    margin-right: -.625rem;
+}
+
+.tags-cloud-item {
+    margin-bottom: .625rem;
+    padding: .375rem .9375rem;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: normal;
+    color: #5199ff;
+    line-height: 1;
+    letter-spacing: .025em;
+    border-radius: .9375rem;
+    border: 1px solid rgba(74,144,226,.5);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: .625rem;
+}
+
+.about-me-content {
+    position: relative;
+    padding-bottom: .625rem;
+}
+
+#language .profile-block-content {
+  min-height: 2rem;
+}
+
 
 
 
