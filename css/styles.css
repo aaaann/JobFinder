@@ -747,6 +747,7 @@ svg:not(:root) {
   justify-content: space-between;
   flex-wrap: wrap;
   padding-right: 15px;
+  min-height: 100%;
 }
 
 .common-content {
