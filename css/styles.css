@@ -791,7 +791,7 @@ svg:not(:root) {
 }
 
 .common-content-body {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   color: #4a4a4a;
 }
 
@@ -808,14 +808,17 @@ svg:not(:root) {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 3rem;
-  right: 3rem;
-  height: 1px;
-  border-bottom: var(--ticket-segment-dashed,1px dashed #ddd);
+}
+
+.position-content:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 3rem;
+    right: 3rem;
+    height: 1px;
+    border-bottom: var(--ticket-segment-dashed,1px dashed #ddd);
 }
 
 
@@ -833,23 +836,22 @@ svg:not(:root) {
 
 .position-body-item {
   margin-right: 1rem;
-  font-size: .975rem;
+  font-size: .975em;
   font-weight: 300;
   color: #9b9b9b;
 }
 
 .position-actions {
   width: 10%;
-  display: -webkit-box;
+/*  display: -webkit-box;*/
   display: flex;
   -webkit-box-pack: end;
   justify-content: flex-end;
 }
 
 
-
 .position-action {
-    font-size: 1.75em;
+    font-size: 1.5em;
     cursor: pointer;
 }
 
@@ -857,25 +859,20 @@ svg:not(:root) {
     color: #ddd;
 }
 
-.fa-star:before {
-    content: "\f005";
-}
 
 .toggle-dropdown {
     -webkit-transform: rotate(0);
     transform: rotate(0);
     cursor: pointer;
     color: #4a90e2;
-    font-size: 3em;
+    font-size: 1.5em;
     padding: 0 .5rem;
     max-height: 3rem;
     line-height: 2rem;
     margin-left: 1rem;
 }
 
-.fa-ellipsis-v:before {
-    content: "\f142";
-}
+
 
 
 
