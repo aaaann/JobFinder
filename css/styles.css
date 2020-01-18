@@ -743,19 +743,79 @@ svg:not(:root) {
 
 .career-body {
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-right: 15px;
+  padding-left: 15px;
   min-height: 100%;
+  cursor: default;
+  font-size: 16px;
+}
+
+.common-aside {
+  width: 500px;
+  padding-right: 1.875rem;
+}
+
+.positions-aside-block {
+  position: relative;
+  padding: 1rem 1.875rem;
+  background: #fff;
+  border-radius: 13.5px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
+}
+
+.positions-aside-block-filter {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #eee;
+  position: relative;
+}
+
+.body-search {
+  width: 100%;
+  height: 2.25rem;
+  position: relative;
+  display: flex;
+  border-radius: .3125rem;
+  overflow: hidden;
+}
+
+.body-search-submit {
+  height: 100%;
+  width: 1.75rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  outline: 0;
+  border: 0;
+  color: #8e8e93;
+  background-color: #f6f8f9;
+}
+
+.body-search-input {
+  width: calc(100% - 1.5rem);
+  outline: 0;
+  border: 0;
+  height: 100%;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .5rem;
+  background-color: #f6f8f9;
 }
 
 .common-content {
-  width: calc(100% - 400px);
+  width: calc(100% - 500px);
 }
 
+
 .common-content-block {
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.15);display: flex;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
+  display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
   padding: 1.875rem;
@@ -785,7 +845,7 @@ svg:not(:root) {
 
 .common-content-heading-label {
   font-size: 1.125em;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: -.3px;
   color: #4a4a4a;
 }
@@ -871,6 +931,64 @@ svg:not(:root) {
     line-height: 2rem;
     margin-left: 1rem;
 }
+
+
+@media (max-width: 1199px) {
+  .common-content {
+    width: calc(100% - 400px);
+  }
+
+  .common-aside {
+    width: 400px;
+  }
+}
+
+@media (max-width: 991px) {
+  .career-body {
+    flex-direction: column;
+    padding-left: 15px;
+    font-size: 14px;
+  }
+
+  .common-content {
+    width: 100%;
+  }
+
+  .slider-wrapper {
+    width: 100%;
+  }
+
+  .common-aside {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 1.875rem;
+  }
+
+  .positions-aside-block-inner {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .career-body {
+    font-size: 12px;
+  }
+
+  .positions-position {
+    padding-left: 1rem;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .position-heading {
+    margin-right: .5rem;
+  }
+}
+
+
+
 
 
 
