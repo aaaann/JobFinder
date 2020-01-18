@@ -812,6 +812,80 @@ svg:not(:root) {
   width: calc(100% - 500px);
 }
 
+.positions-aside-flex-heading {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.positions-aside-block-heading {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.tags-add-button {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: 500;
+  color: #4a90e2;
+  cursor: pointer;
+  text-align: right;
+}
+  
+.positions-filter-row {
+    margin-bottom: .5rem;
+}
+
+.positions-filter-checkbox {
+    display: none;
+}
+
+.positions-filter-label {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.positions-filter-check {
+  margin-right: .5rem;
+  position: relative;
+  max-width: 1.25rem;
+  min-width: 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: .125rem;
+  border: 1px solid #a5adb6;
+  transition: .3s ease-in-out background-color,.3s ease-in-out border-color;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+.positions-filter__check--checked {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+}
+
+.positions-filter-check-icon {
+  opacity: 1;
+  transition: .15s;
+  position: absolute;
+}
+
+.positions-filter-label-text {
+    font-size: 1em;
+    color: #4a4a4a;
+}
 
 .common-content-block {
   box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
