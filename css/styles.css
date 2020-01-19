@@ -1219,6 +1219,23 @@ svg:hover .social-item__icon--background.inst {
     );
 }
 
+@media (max-width: 1199px) {
+  .about-body {
+    width: 70%;
+  }
+
+  .about-body-content {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .my-photo-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 @media (max-width: 991px) {
   .about-body {
     font-size: 14px;
