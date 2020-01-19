@@ -1118,7 +1118,166 @@ svg:not(:root) {
 }
 
 
+.info-details__socials {
+    display: flex;
+    margin-top: 20px;
+}
 
+
+
+.info-details__socials-icons {
+    margin-right: 1rem;
+}
+
+.social-item {
+  margin-right: rem(15px);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.social-item:hover .social-item__icon {
+  .color {
+    transition: fill, fill-opacity 0.3s;
+    fill: $softBlue;
+    fill-opacity: 1;
+  }
+}
+
+.social-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(28px);
+  height: rem(28px);
+  background-color: $lightGrey;
+  border-radius: 50%;
+}
+
+
+.social-icon--adaptive {
+  width: 28px;
+  height: 28px;
+}
+
+.social-item__icon--background {
+  fill: #d2d6da;
+}
+
+svg .social-item__icon--background.fb {
+    fill: #4267b2;
+  }
+
+svg:hover .social-item__icon--background.mail-ico {
+    fill: #5199ff;
+  }
+
+svg:hover .social-item__icon--background.tg {
+    fill: #2ca5e0;
+  }
+
+svg:hover .social-item__icon--background.twitter-ico {
+    fill: #1ba1f1;
+  }
+
+svg:hover .social-item__icon--background.viber-ico {
+    fill: #574e92;
+  }
+
+svg:hover .social-item__icon--background.vk-ico {
+    fill: #4a76a8;
+  }
+
+svg:hover .social-item__icon--background.whatsapp-ico {
+    fill: #00e676;
+  }
+
+svg:hover .social-item__icon--background.inst {
+    fill: none;
+  }
+}
+
+.bg-inst--hover {
+  width: rem(28px);
+  height: rem(28px);
+  border-radius: 50%;
+  background-image: none;
+}
+
+.bg-inst--hover:hover {
+  border-radius: 50%;
+  background-image:
+    radial-gradient(
+      circle at 20% 87%,
+      #fae100,
+      #fadc04 5%,
+      #fbce0e 12%,
+      #fcb720 18%,
+      #fe9838 25%,
+      #ff7950 31%,
+      #ff1c74 49%,
+      #6c1cd1
+    );
+}
+
+@media (max-width: 991px) {
+  .about-body {
+    font-size: 14px;
+    width: 80%;
+  }
+  .about-body-content {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .my-photo-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .info-details__socials {
+    flex-wrap: wrap;
+    flex: 1 1;
+  }
+
+  .about-body {
+    font-size: 12px;
+    width: 90%;
+    /*margin-right: 15px;
+    margin-left: 15px;*/
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .about-body-content {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-body-main {
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  .about-body-info {
+    margin: 15px auto;
+    width: 100%;
+  }
+
+  .my-photo-wrapper {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+
+  .my-photo {
+    margin: 0 auto;
+  }
+}
 
 
 
