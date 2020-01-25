@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/c50b724b31.js" crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </head>
 <body>
 	<header>
@@ -107,7 +109,68 @@
 						</div>
 					</div>
 				</div>
+			<!-- </aside> -->
+				<div id="top-employers" class="positions-aside-block">
+					<h3 class="positions-aside-block-heading"> Популярные работодатели <br>(2020 г) </h3>
+					<figure class="highcharts-figure">
+					    <div id="container"></div>
+					</figure>
+
+					<script language="javascript">
+						Highcharts.chart('container', {
+						    chart: {
+						        plotBackgroundColor: null,
+						        plotBorderWidth: 0,
+						        plotShadow: false
+						    },
+						    title: null,
+						    tooltip: {
+						        pointFormat: '<b>{point.percentage:.1f}%</b>'
+						    },
+						    accessibility: {
+						        point: {
+						            valueSuffix: '%'
+						        }
+						    },
+						    plotOptions: {
+						        pie: {
+						            dataLabels: {
+						                enabled: true,
+						                distance: -50,
+						                style: {
+						                    fontWeight: 'bold',
+						                    color: 'white'
+						                }
+						            },
+						            startAngle: -90,
+						            endAngle: 90,
+						            center: ['50%', '75%'],
+						            size: '110%'
+						        }
+						    },
+						    series: [{
+						        type: 'pie',
+						        innerSize: '50%',
+						        data: [
+						            ['Сбербанк', 58.9],
+						            ['Тинькофф Банк', 13.29],
+						            ['Яндекс', 13],
+						            ['Glowbyte', 3.78],
+						            ['МТС', 3.42],
+						            {
+						                name: 'Other',
+						                y: 7.61,
+						                dataLabels: {
+						                    enabled: false
+						                }
+						            }
+						        ]
+						    }]
+						});
+					</script>
+				</div>
 			</aside>
+
 			<div class="common-content" id="positionsContent">
 				<div class="common-content-block">
 					<div class="slider-wrapper">
@@ -141,11 +204,11 @@
 														Москва
 													</div>
 													<div class="position-body-item">
-														<span><b>280 000 руб.</b></span>
+														<span><b><a href="salary_graph.html">280 000 руб.</a></b></span>
 													</div>
 													<div class="position-body-item">
 														<br>Добавили в избранное:
-														<span class="position-body-item-number"> 14 </span>
+														<span class="position-body-item-number"><a href="prefs_graph.html">14</a></span>
 													</div>
 												</div>
 											</div>
@@ -186,7 +249,7 @@
 													</div>
 													<div class="position-body-item">
 														<br>Добавили в избранное:
-														<span class="position-body-item-number"> 10 </span>
+														<span class="position-body-item-number"><a href="">10</a></span>
 													</div>
 												</div>
 											</div> 
@@ -228,6 +291,7 @@
 	<!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@ html, body {
   }
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: 'Roboto', sans-serif;
   color: #171C20;
   letter-spacing: .025rem;
@@ -836,6 +836,8 @@ svg:not(:root) {
 .common-aside {
   width: 500px;
   padding-right: 1.875rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .positions-aside-block {
@@ -844,6 +846,21 @@ svg:not(:root) {
   background: #fff;
   border-radius: 13.5px;
   box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
+}
+
+#top-employers {
+  margin-top: 15px;
+  text-align: center;
+  max-height: 400px;
+  overflow-y: hidden;
+}
+
+.highcharts-figure {
+
+}
+
+.highcharts-title {
+  font-size: 1.2rem;
 }
 
 .positions-aside-block-filter {
@@ -1046,11 +1063,19 @@ svg:not(:root) {
 }
 
 
-.position-body-item {
+.position-body-item, .position-body-item a{
   margin-right: 1rem;
   font-size: .975em;
   font-weight: 300;
   color: #9b9b9b;
+}
+
+.position-body-item a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #323232;
 }
 
 .position-actions {
@@ -1391,12 +1416,14 @@ svg:hover .social-item__icon--background.inst {
   margin-top: 1rem;
 }
 
-.position-body-item-number {
+.position-body-item-number > a{
   font-weight: 400;
   color: #323232;
   font-size: 1.2em;
   cursor: pointer;
+  text-decoration: none;
 }
+
 
 .position-rating-number {
   width: 25px;
@@ -1556,6 +1583,14 @@ svg:hover .social-item__icon--background.inst {
 
 ::-webkit-scrollbar-track {
     border-radius: 10px;
+}
+
+.graph-container {
+  padding: 1rem 1.875rem;
+  margin: 15px 15px 15px 15px;
+  background: #fff;
+  border-radius: 13.5px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
 }
 
 
